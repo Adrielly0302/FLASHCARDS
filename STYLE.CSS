@@ -1,0 +1,48 @@
+/* Centralizar o conteúdo da página */
+body {
+  background-color: #ccedfa;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Estilo do cabeçalho */
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo do flashcard */
+.flashcard {
+  background-color: #92a9f7;
+  border: 2px solid #586685;
+  border-radius: 8px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+/* Efeito de hover no flashcard */
+.flashcard:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo da frente e do verso do flashcard */
+.frente, .verso {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+.frente {
+  display: block;
+}
